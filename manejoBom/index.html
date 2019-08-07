@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Manejo del BOM</title>
+    </head>
+    <body id="cuerpo" onload="load()">
+        <div id="todo">
+            <p>Seleccione el color de fondo: </p> 
+            <button id="rojo" onclick="fondo('rojo')">Rojo</button>
+            <button id="verde" onclick="fondo('verde')">Verde</button>
+            <button id="azul" onclick="fondo('azul')">Azul</button>
+            <div id="uno">
+            <div class="primero">
+                <h1>Este es el título UNO</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
+                    elit. Soluta saepe a iusto sit repudiandae quasi? 
+                    Magnam unde quod voluptatum animi corporis 
+                    necessitatibus natus, iste, veniam nulla et minus 
+                    nobis ab.</p>
+                </div>
+            </div>
+            <div id="dos">
+                <div class="segundo">
+                    <h1>Este es el título DOS</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
+                        elit. Soluta saepe a iusto sit repudiandae quasi? 
+                        Magnam unde quod voluptatum animi corporis 
+                        necessitatibus natus, iste, veniam nulla et minus 
+                        nobis ab.</p>
+                    </div>
+            </div>
+            <div id="tres">
+                <div class="tercero">
+                    <h1>Este es el título TRES</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
+                        elit. Soluta saepe a iusto sit repudiandae quasi? 
+                        Magnam unde quod voluptatum animi corporis 
+                        necessitatibus natus, iste, veniam nulla et minus 
+                        nobis ab.</p>
+                        </div>
+                </div>
+            </div>
+
+            <a href="http://www.google.com" id="miLink">Mi Link</a>
+            <p id="resultado"></p>
+            <button onclick="getLink()">Obtener Link</button>
+
+            <p class="elemento" id="e1">Elemento 1</p>
+            <p class="elemento" id="e2">Elemento 2</p>
+            <p class="elemento" id="e3">Elemento 3</p>
+            <p class="elemento" id="e4">Elemento 4</p>
+            <p class="elemento" id="e5">Elemento 5</p>
+            <button onclick="borrarElemento">Borrar Elemento</button>
+
+            <script src="js/funciones.js"></script>
+        </body>
+        </html>
