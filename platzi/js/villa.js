@@ -8,6 +8,9 @@ Math.random() => número aleatorio entre 0 y 1
 
 let vp = document.getElementById("villaPlatzi");
 let papel = vp.getContext("2d");
+let numVacas  = aleatorio(0, 40);
+let numCerdos = aleatorio(0, 2);
+let numPollos = aleatorio(0, 6);
 let fondo = {
     url: "img/tile.png",
     cargaOk: false
@@ -25,12 +28,7 @@ let vaca = {
     cargaOk: false
 }
 
-
 //INSERTAR UNA IMAGEN EN UN CAVNAS
-let numVacas  = aleatorio(0, 40);
-let numCerdos = aleatorio(0, 2);
-let numPollos = aleatorio(0, 6);
-
 fondo.imagen = new Image();  //buena práctica los nombres de clases empieza con mayúscula
 fondo.imagen.src = fondo.url;
 fondo.imagen.addEventListener("load", cargarFondo);
