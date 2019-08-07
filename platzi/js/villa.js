@@ -11,7 +11,6 @@ let papel = vp.getContext("2d");
 let numVacas  = aleatorio(0, 40);
 let numCerdos = aleatorio(0, 2);
 let numPollos = aleatorio(0, 6);
-
 let fondo = {
     url: "img/tile.png",
     cargaOk: false
