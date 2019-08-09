@@ -5,7 +5,9 @@ let cambioOperacion = false; //controlar el cambio de operación
 
 function limpiar() {
   display.value = "0";
+  total = 0;
   borrarDisplay = true;
+  cambioOperacion = false;
 }
 
 function copy() {
@@ -64,6 +66,7 @@ function operacionDivide() {
 function mostrarResultado() {
   resultado(operacion);
   cambioOperacion = true;
+  borrarDisplay = true;
 }
 
 function resultado(operacion) {
