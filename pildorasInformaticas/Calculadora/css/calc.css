@@ -1,0 +1,32 @@
+.numero{
+  width:  60px;
+  height: 60px;
+}
+
+.ce{
+  width:  60px;
+  height: 120px;
+  background-color: rgb(182, 172, 172);
+}
+
+.igual{
+  width:  125px;
+  height: 60px;
+
+}
+
+table{
+  margin: auto;
+}
+
+.color_display{
+  height: 30px;
+  width: 245px;
+  background-color: #000;
+  border: medium #FFF;
+  font: "Space Age";
+  color: #0F0;
+  font-size: 18px;
+  text-align: right;
+  padding: 5px;
+}
