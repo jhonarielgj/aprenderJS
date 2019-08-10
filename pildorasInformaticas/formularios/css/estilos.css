@@ -1,0 +1,20 @@
+body{
+    background-color:rgb(220, 229, 233);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+#principal{	
+	padding:10px 10px 10px 50px;
+	background-color:rgb(154, 187, 228);	
+	box-shadow: 10px 10px 5px 0px #4e94ce;
+	border-radius: 10px;
+}
+
+td{
+	padding-bottom:25px;
+}
+
+h1{
+	text-align:center;
+}
