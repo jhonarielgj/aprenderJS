@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visor de imágenes</title> 
+    <style type="text/css">
+        * { margin: auto; padding: 0; text-align: center }
+        #cabecera { font: bold 1.3em verdana; color:#2c21c5; background-color: #f0e4ff; }
+        h1 { text-align: center ; padding: 0.5em }
+        #menu { float: left; width: 25%; background-color: #e3f2ff; }
+        #menu img { width: 35%; margin: 5%; cursor: pointer; }
+        #principal { float: left; width: 75%; }
+        #visor { width: 60%; margin-left: 20%; margin-top: 2% }
+        #visor img { width: 100% }
+        body {font-family: Arial, Helvetica, sans-serif; background-color: rgb(218, 218, 240)}
+    </style>
+    <script type="text/javascript">
+        window.onload = function() { //tras cargar la página ...
+            visor1 = document.getElementById("visor"); //referencia al visor
+            mititulo = document.getElementById("titulo"); //referencia al pie de foto
+        }
+        function mifoto(num) { //cambiar la imagen
+            f = "img/foto" + num + ".jpg"; //ruta de la nueva imagen
+            document.images["fotoVisor"].src = f; //cambiar imagen
+            console.log(document.images);
+            t = document.images["fotos"+num].alt; //texto de pie de foto
+            mititulo.innerHTML = t; //cambiar pie de foto
+        }
+    </script>
+</head>
+<body>
+    <div id="cabecera">
+        <h1>Visor de imágenes</h1>
+    </div>
+    <div id="menu">
+        <img src='img/foto1.jpg' alt='1. India - Agra - El Taj Majal.' name='fotos1' onclick="mifoto(1)"/>
+        <img src='img/foto2.jpg' alt='2. Albania - Region de Ballsh.' name='fotos2' onclick="mifoto(2)"/>
+        <img src='img/foto3.jpg' alt='3. Atenas- Partenón.' name='fotos3' onclick="mifoto(3)"/>
+        <img src='img/foto4.jpg' alt='4. Bélgica - Amberes.' name='fotos4' onclick="mifoto(4)"/>
+        <img src='img/foto5.jpg' alt='5. Costa Rica - Parque nacional de la Amistad.' name='fotos5' onclick="mifoto(5)"/>
+        <img src='img/foto6.jpg' alt='6. Egipto - Templo de Abu Simbel.' name='fotos6' onclick="mifoto(6)"/>
+        <img src='img/foto7.jpg' alt='7. España - Albacete ciudad.' name='fotos7' onclick="mifoto(7)"/>
+        <img src='img/foto8.jpg' alt='8. España - Tarragona - Acueducto romano.' name='fotos8' onclick="mifoto(8)"/>
+    </div>
+    <div id="principal">
+        <div id="visor">
+            <img src='img/foto1.jpg' alt='1. India - Agra - El Taj Majal.' name='fotoVisor'/>
+            <div id="titulo">1. India - Agra - El Taj Majal.</div>
+        </div>
+    </div>
+</body>
+</html>
