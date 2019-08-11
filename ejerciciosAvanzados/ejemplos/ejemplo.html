@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejemplos avanzados JS</title>
+    <script>
+      //Para que sea i sea VERDADERO puede tener los siguientes valores:
+      //true, 0, NaN, undefined
+      let i = undefined;
+      let valor1 = 0;
+      if (i) {
+        valor1 += 1;
+      } else {
+        valor1 += 0;
+      }
+      console.log(valor1);
+      //Forma resumidad de ver el if anterior
+      let valor2 = 0;
+      valor2 += i ? 1 : 0;
+      console.log(valor2);
+    </script>
+  </head>
+  <body>
+    <p></p>
+  </body>
+</html>
