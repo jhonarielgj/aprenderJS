@@ -1,1 +1,1 @@
-Este es un texto leído de un archivo externo TXT
+﻿Este es un texto leído de un archivo externo TXT

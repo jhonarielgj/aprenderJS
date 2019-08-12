@@ -1,23 +1,26 @@
-/*http_request = new XMLHttpRequest();
-http_request.onreadystatechange = validar;
-http_request.open("GET", "texto.txt", true);
-http_request.send();
-console.log(http_request.readyState);
-console.log(http_request.status);
+document.querySelector("#boton").addEventListener("click", traerDatos);
 
-function validar() {
-    if (http_request.readyState == 4 && http_request.status == 400) {
-        console.log(http_request.responseTXT);
+function traerDatos() {
+    //console
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "texto.txt", true);
+    xhttp.send();
+    
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(http_request.responseTXT);
+            //document.querySelector("#respuesta").innerHTML = http_request.responseText;
+        }
     }
-}*/
+}
 
+/*
 var http_request = false;
-let ruta = "texto.txt";
 
-function makeRequest(url) {
+function makeRequest() {
 
     http_request = false;
-
+    let url = "texto.txt";
     if (window.XMLHttpRequest) { // Mozilla, Safari,...
         http_request = new XMLHttpRequest();
         if (http_request.overrideMimeType) {
@@ -50,11 +53,11 @@ function alertContents() {
     console.log(http_request.status);
     if (http_request.readyState == 4) {
         if (http_request.status == 200) {
-            alert(http_request.responseText);
+            console.log(document.querySelector("#respuesta"));
+            document.querySelector("#respuesta").innerHTML = http_request.responseText;
         } else {
             alert('Hubo problemas con la petición.');
         }
     }
 
-}
-
+}*/
