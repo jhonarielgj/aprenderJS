@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "HTML",
+        "nivel": "Básico"
+    },
+    {
+        "titulo": "CSS",
+        "nivel": "Básico"
+    },
+    {
+        "titulo": "JavaScript",
+        "nivel": "Medio"
+    },
+    {
+        "titulo": "Node.js",
+        "nivel": "Avanzado"
+    },
+    {
+        "titulo": "Bootstrap",
+        "nivel": "Básico"
+    }
+]
