@@ -44,3 +44,12 @@ Desarrollador.prototype.saludar.bind({
     nombre: "Gomez",
     edad: 49
 })();
+
+//Puedo crear un método o un atributo a una clase
+Persona.prototype.nacionalidad = "Colombia";
+Persona.prototype.despedir = function () {
+    console.log("Adios");
+}
+//Se crearon en la clase Persona y la clase Desarrollador los hereda 
+desarrolladorJhon.despedir();
+console.log(desarrolladorJhon.nacionalidad);
