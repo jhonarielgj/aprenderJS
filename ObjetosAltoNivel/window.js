@@ -45,5 +45,5 @@ function redimensionarVentana() {
 }
 
 function imprimir() {
-    print();
+    miVentana.print();
 }

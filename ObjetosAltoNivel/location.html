@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            color: blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">Información</div>
+    <div id="botones">
+        <button id="asignar" onclick="asigno()">Asignar</button>
+        <button id="recargar" onclick="recargo()">Recargar</button>
+        <button id="reemplazar" onclick="reemplazo()">Reemplazar</button>
+    </div>
+    <script>
+        let texto = "";
+        texto += "<strong>Objeto LOCATION: Información de la URL actual</strong><br>"
+        texto += "<br><strong>PROPIEDADES</strong><br>"
+        //hash 	Sets or returns the anchor part (#) of a URL
+        texto += "<br><strong>hash:</strong> "+location.hash;
+        //host 	Sets or returns the hostname and port number of a URL
+        texto += "<br><strong>host:</strong> "+location.host;
+        //hostname 	Sets or returns the hostname of a URL
+        texto += "<br><strong>hostname:</strong> "+location.hostname;
+        //href 	Sets or returns the entire URL
+        texto += "<br><strong>href:</strong> "+location.href;
+        //origin 	Returns the protocol, hostname and port number of a URL
+        texto += "<br><strong>origin:</strong> "+location.origin;
+        //pathname 	Sets or returns the path name of a URL
+        texto += "<br><strong>pathname:</strong> "+location.pathname;
+        //port 	Sets or returns the port number of a URL
+        texto += "<br><strong>port:</strong> "+location.port;
+        //protocol 	Sets or returns the protocol of a URL
+        texto += "<br><strong>protocol:</strong> "+location.protocol;
+        //search 	Sets or returns the querystring part of a URL    
+        texto += "<br><strong>search:</strong><br>"+location.search;
+        texto += "<br><strong>METODOS</strong><br><br>"
+        document.getElementById("info").innerHTML = texto;
+        //assign() 	Loads a new document - NO borra historial de la página
+        function asigno() {
+            location.assign("http://www.google.com");
+        } 
+        //reload() 	Reloads the current document
+        function recargo() {
+            location.reload();
+        }
+        //replace() Replaces the current document with a new one - BORRA HISTORIAL DE LA PAGINA
+        function reemplazo() {
+            location.replace("http://www.google.com");
+        }
+    </script>
+    
+</body>
+</html>
