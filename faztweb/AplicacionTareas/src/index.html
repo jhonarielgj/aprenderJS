@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas - Javascript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">Tareas App</a>
+
+        </div>
+    </nav>
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="formTask">
+                            <div class="form-group">
+                                <input type="text" id="title" placeholder="Adicionar tarea" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="description" rows="8" cols="80" class="form-control" placeholder="Adicionar descripción"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="tasks"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
