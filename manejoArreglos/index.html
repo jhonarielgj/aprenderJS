@@ -5,10 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manejo de arreglos</title>
     <script src="arreglos.js"></script>
+    <script src="arreglos2.js"></script>
 </head>
 <body>
     <h1>Manejo de arreglos</h1>
     <h3>Como utilizar los métodos de arreglo push, pop, shift y unshift en JavaScript</h3>
     <div class="matriz" id="matriz"></div>
+    <div class="nodo"></div>
+    <div class="nodo"></div>
+    <div class="nodo"></div>
+    <div class="nodo"></div>
+    <div class="nodo"></div>
+    <div class="primos"></div>
+    <div id="prueba"></div>
+    <h2>Números primos</h2>
+    <pre>
+        <code>
+            let primos = [];
+            for (let i = 2; i <= 10000000; i++) {
+                let esPrimo = true;
+                for (let j = 2; j <= i - 1; j++) {
+                    let modulo = i % j;
+                    if (modulo == 0) {
+                        esPrimo = false;
+                        break;
+                    };
+                };
+                if (esPrimo) {
+                    primos.push(i);
+                };
+            };
+        </code>
+    </pre>
 </body>
 </html>
