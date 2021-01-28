@@ -9,11 +9,11 @@ function evaluar() {
     for (let i = 1; i <= numeroMaximo; i++) {
         divisible = false;
         if (i % 3 == 0) {
-            resultado.innerHTML += " Fizz";
+            resultado.innerHTML += " Divisible por 3";
             divisible = true;
         } 
         if (i % 5 == 0) {
-            resultado.innerHTML += " Buzz";
+            resultado.innerHTML += " Divisible por 5";
             divisible = true;
         } 
         if (!divisible) {
