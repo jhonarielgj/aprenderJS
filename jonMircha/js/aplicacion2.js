@@ -10,3 +10,18 @@ setInterval(() => {
     console.log(i++);
 }, 1000);
 
+/* const persona = {
+    cc: 10136476,
+    nombre: "Jhon",
+    apellido: "Gómez",
+    correo: "jhonarielgj@gmail.com"
+}
+
+console.log(persona);
+console.log(persona.cc);
+Object.keys(persona);
+console.log(Object.keys(persona));
+
+Object.keys(persona).forEach((valor) => {
+    console.log(valor);
+}); */
