@@ -24,7 +24,7 @@ btn.onclick = () => {
     console.log("Hizo click");
 } */
 
-let meses = [
+/* let meses = [
     "Enero",
     "Febrero",
     "Marzo",
@@ -48,5 +48,74 @@ meses.forEach(element => {
     $ul.appendChild($li).innerHTML += element;
     // console.log('$li: ', $li);
 });
+ */
 
+//  Uso de TEMPLATE y FRAGMENT para generar código html dinámico
+
+// const $cards = document.querySelector(".cards"),
+// $template = document.getElementById("template-card").content,
+// $fragment = document.createDocumentFragment(),
+// cardContent = [
+//     {
+//         title: "Tecnología",
+//         image: "https://placeimg.com/200/200/tech"
+//     },
+//         {
+//             title: "Animales",
+//             image: "https://placeimg.com/200/200/animals"
+//         },
+//         {
+//             title: "Arquitectura",
+//             image: "https://placeimg.com/200/200/arch"
+//         },
+//         {
+//             title: "Gente",
+//             image: "https://placeimg.com/200/200/people"
+//         },
+//         {
+//             title: "Naturaleza",
+//             image: "https://placeimg.com/200/200/nature"
+//         }
+//     ];
+
+//     cardContent.forEach(el => {
+//     $template.querySelector("img").setAttribute("src", el.image);
+//     $template.querySelector("img").setAttribute("alt", el.title);
+//     $template.querySelector("figcaption").textContent = el.title;
+    
+//     let $clone = document.importNode($template, true);
+//     $fragment.appendChild($clone);
+// });
+
+// $cards.appendChild($fragment);
+
+class Rectangle {
+    constructor(height, width) {
+      this.height = height;
+      this.width = width;
+    }
+    // Method
+    calcArea() {
+      return this.height * this.width;
+    }
+  }
+
+class Users {
+    constructor(nombre) {
+        this.nombre = nombre;
+        this.activo = true;
+    }
+    saludar() {
+        console.log(`Hola ${this.nombre}`);
+    }
+}
+console.log('Users: ', Users);
+
+let jhon = new Users("Jhon");
+console.log('jhon: ', jhon);
+
+Users.prototype.activo = false;
+console.log('Users: ', Users);
+
+console.log('jhon: ', jhon);
 
