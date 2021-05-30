@@ -72,11 +72,13 @@ img {
     transform: translate(0,-100%);
     /* Una opción o complemento a transform que hace que el menú se desplace puede ser que aparezca con opacity */
     opacity: 0;
+    visibility: hidden;
 }
 
 .panel.is-active { 
     transform: translate(0,0);
     opacity: 1;
+    visibility: visible;
 }
 
 .panel-btn {

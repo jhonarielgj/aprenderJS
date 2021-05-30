@@ -1,4 +1,6 @@
 {
     "cSpell.language": ",es",
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "editor.tabSize": 2,
+    "editor.fontFamily": "'Fira Code', 'Jetbrains Mono', Consolas, 'Courier New', monospace"
 }
