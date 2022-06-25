@@ -17,12 +17,12 @@ button {
   border: 0px;
 }
 
-#botones {
+.botones {
   display: flex;
   justify-content: center;
 }
 
-#acciones {
+.acciones {
   margin-top: 50px;
   text-align: center;
   color: rgb(198, 49, 49);
