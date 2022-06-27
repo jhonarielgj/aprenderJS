@@ -32,7 +32,7 @@ function accion1() {
 }
 
 function accion2() {
-  // Reseterar los estilos modificadosen JS y usar los de estilos.css
+  // Reseterar los estilos modificados en JS y usar los de estilos.css
   document.querySelector("img").style = null;
   document.querySelectorAll(".boton")[0].style = null;
   document.querySelectorAll(".boton")[1].style = null;
