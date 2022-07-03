@@ -127,7 +127,10 @@ Si el archivo se encuentra en el disco local, se puede dar la ruta local.
 
 ## Lista de chequeo
 
-[] Item 1
+[ ] Item 1
+
 [x] Item 2 chequeado
-[] Item 3
+
+[ ] Item 3
+
 [x] Item 4 Chequeado
