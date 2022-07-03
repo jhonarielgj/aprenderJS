@@ -2,13 +2,17 @@
 
 Va hasta 6 niveles y se usa # antes de cada título desde # hasta ######
 
-# Este es el texto para este titulo
+# Título 1
 
-## Subtítulo
+## Título 2
 
-### Sub Subtítulo
+### Título 3
 
-###### Va hasta nivel 6
+#### Título 4
+
+##### Título 5
+
+###### Título 6
 
 ---
 

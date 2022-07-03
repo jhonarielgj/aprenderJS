@@ -22,9 +22,18 @@ button {
 
 input {
   font-size: 1.5em;
-  width: 50px;
+  width: 60px;
   height: 50px;
   text-align: center;
   color: red;
   margin: 0 20px;
+}
+
+.acciones {
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(198, 49, 49);
+  background-color: aqua;
+  height: 50px;
+  padding: 20px;
 }
